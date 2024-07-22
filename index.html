@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Glam Cloud Search Tool</title>
+</head>
+<body>
+    <header>
+        <h3>Glam Cloud Search Tool(go/glam_search)</h3>
+    </header>
+    <main>
+        <section>
+            <h2>Enter Company Name or Domain</h2>
+            <div class="box">
+                <input type="text" class="input" id="companyInput" placeholder="e.g., apple.com">
+            </div>
+            <button class="linksButton" onclick="generateSearchLinks()">Generate Search Links</button>
+        </section>
+        <section id="linksSection">
+            <h2>Search Links</h2>
+            <div id="linksContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Glam-Search(go/glam_search) || All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
