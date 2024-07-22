@@ -1,7 +1,12 @@
+*{
+    /* background: black; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
 body {
     /* font-family: Arial, sans-serif; */
     font-family: "Google Sans Display" Comic Sans MS;
-
     line-height: 1.6;
     /* background-color: #f4f4f4; */
     background-color: #fdfbff;
@@ -13,7 +18,7 @@ body {
 }
 
 header {
-    background: black;
+    background: #460073;
     color: white;
     width: 100%;
 }
@@ -83,7 +88,7 @@ input, button {
 }
 
 .linksButton:hover {
-  background-color: #cdb1ff;
+  background-color: #460073;
   transform: translateY(-2px);
   color: white;
 }
@@ -116,7 +121,7 @@ button {
 
 footer {
     display: flex;
-    background-color: black;
+    background-color: #460073;
     color: white;
     padding: 10px;
     justify-content: center;
