@@ -8,9 +8,9 @@ function generateSearchLinks() {
     }
 
     const queries = [
-        'acquired', 'LinkedIn', 'Sales Navigator', 'Crunchbase', 'Zoominfo',
-        'Cognism', 'Kompass', 'Apollo.io', 'Pitchbook', 'Employees',
-        'Company Closed', 'Phone number', 'DNB', 'Zaubacorp', 'IndiaMart',
+        'LinkedIn',  'Phone number','Crunchbase', 'Zoominfo', 'Pitchbook',
+        'Cognism', 'Apollo.io', 'Employees' , 'DNB','Sales Navigator',
+        'Company Closed',  'Kompass', 'Zaubacorp', 'IndiaMart',
         'economicTimes', 'RocketPunch'
     ];
 
@@ -32,6 +32,13 @@ function generateSearchLinks() {
     // Add a class to the input box to keep it expanded
     input.classList.add('has-content');
 }
+
+// Set up the event listener for the Enter key when the script loads
+document.getElementById('companyInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('generateButton').click();
+    }
+});
 
 // Remove the class when the input is empty
 document.getElementById('companyInput').addEventListener('input', function() {
